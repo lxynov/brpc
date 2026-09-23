@@ -341,7 +341,7 @@ if [ "$PROTOBUF_VERSION" -ge 4022000 ]; then
     done
     CXXFLAGS="-std=c++17"
 else
-    CXXFLAGS="-std=c++0x"
+    CXXFLAGS="-std=c++17"
 fi
 
 LEVELDB_HDR=$(find_dir_of_header_or_die leveldb/db.h)
